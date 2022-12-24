@@ -238,7 +238,9 @@ textarea:focus {
     /* height: 200px; */
 }
 
-
+.text-muted{
+    font-size: x-small;
+}
 
 @media (max-width: 992px) {
     .bg-img {
