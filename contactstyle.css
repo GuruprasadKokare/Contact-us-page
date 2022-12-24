@@ -39,8 +39,10 @@ body {
     padding-top: 2%;
     padding-bottom: 2%;
 
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+
+    
+    
     background-color: #fdfdfd;
     border: none;
 }
@@ -105,8 +107,9 @@ textarea:focus {
 }
 
 .box-1:focus-within {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-out;
 }
 
 .link-mail {
@@ -147,7 +150,7 @@ textarea:focus {
 
 .box3 {
     width: 70%;
-    margin-left: 20%;
+    margin-left: 30%;
     margin-right: auto;
     height: fit-content;
     padding-left: 2%;
@@ -219,11 +222,11 @@ textarea:focus {
     text-decoration: none;
     color: black;
     margin-left: 5%;
-
+    
 }
 
 .title {
-    margin-left: 13%;
+    margin-left: 30%;
 }
 
 
@@ -235,11 +238,9 @@ textarea:focus {
     /* height: 200px; */
 }
 
-.touch {
-    position: relative;
-}
 
-@media (min-width: 768px) {
+
+@media (max-width: 992px) {
     .bg-img {
         height: 720px;
         background-position: -185px 0px;
@@ -247,33 +248,95 @@ textarea:focus {
         /* will-change: auto; */
         width: 100%;
     }
-
+    
     .touch ,.touch a{
-       color: #f2f2f2;
+        color: inherit;
+        font-size: 30px;
         /* position: absolute;
         top: 52%;
         left: -3%;
         width: -webkit-fill-available; */
     }
-
-    .box{
-
+    
+    .touch i{
+        font-size: 35px;
+    width: 65px;
+    height: 65px;
+    margin-top: 3%;
     }
 
- 
+    .imagee{
+        width: 70%;
+        margin-left: 15%;
+    }
+    
+    .line {
+        margin-left: 12%;
+        margin-right: 16%;
+        margin-top: -1%;
+    }
+    
+    .box3{
+        margin-left: 15%;
+    }
+    
+    .title{
+        margin-left: 12%;
+        font-size: 50px;
+    }
 
+    .box{
+        display: initial;
+    }
+
+    .form input, .form textarea{
+        font-size: 200%;
+        padding-left: 15%;
+    }
+
+    .form i{
+        font-size: 200%;
+
+    }
+    .pos, .pos-1{
+        margin-top: 4%;
+    margin-left: 2.5%;
+    }
+
+    textarea{
+        height: 140px;
+    }
+
+    .butun{
+        font-size: x-large;
+        padding: 15px;
+        margin-top: 2%;
+    }
+
+    .text-muted{
+        font-size: larger;
+    }
+
+    .box-1{
+        margin-bottom: 5%;
+    }
 }
 
 @media (min-width: 1000px) {
     .bg-img{
         background-size: cover;
-    height: 75%;
-    width: 100%;
-    background-position: center;
+        height: 75%;
+        width: 100%;
+        background-position: center;
     }
-
+    
     .touch {
         position: initial;
-        
+        color: initial;
     }
+    .touch ,.touch a{
+        color: initial;
+    }
+    
+   
 }
