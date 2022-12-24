@@ -2,57 +2,62 @@
 
 @import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css 536");
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-.bg-img{
+.bg-img {
     background-image: url('./source/back-wave.svg');
-    background-size:cover;
+
     width: 100%;
     height: 75%;
     background-repeat: no-repeat;
     padding-top: 4%;
-    
+
 }
 
-.bord{
-     border: 1px solid black;
+.bord {
+    border: 2px solid;
+    border-color: rgb(80, 80, 80);
+    color: rgb(40, 40, 40);
 }
 
-.box{
+.box {
     width: 70%;
     height: 500px;
     margin-left: auto;
     margin-right: auto;
 }
-.box-1{
+
+.box-1 {
     width: 70%;
-    height: 83%;
+    height: min-content;
     margin: auto;
     margin-top: 10%;
     border-radius: 15px;
     padding: 6%;
     padding-top: 2%;
-    
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding-bottom: 2%;
+
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
     background-color: #fdfdfd;
     border: none;
 }
 
-.box-in{
+.box-in {
     padding-left: auto;
     padding-right: auto;
     padding-top: auto;
     padding-bottom: auto;
 }
 
-.msg{
+.msg {
     height: 50%;
     padding: 0;
 }
 
-input{
+input {
     width: 100%;
     padding: 3%;
     background-color: #f2f2f2;
@@ -62,7 +67,7 @@ input{
     padding-left: 40px;
 }
 
-textarea{
+textarea {
     background-color: #f2f2f2;
     padding: 3%;
     border-radius: 5px;
@@ -73,80 +78,84 @@ textarea{
     padding-left: 40px;
     width: 100%;
     height: 76px;
-    
+
 }
-.butun{
+
+.butun {
     width: 100%;
     margin-bottom: 5px;
 }
 
-.text-size-sm{
+.text-size-sm {
     font-size: 11px;
     text-align: justify;
     margin-left: 2%;
     margin-right: 2%;
-    
+
 }
 
-input:focus{
+input:focus {
     border: none;
     outline: none;
 }
 
-textarea:focus{
+textarea:focus {
     border: none;
     outline: none;
 }
 
-.box-1:focus-within{
+.box-1:focus-within {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: all 0.4s ease-in-out;
 }
 
-.link-mail{
+.link-mail {
     text-decoration: none;
     color: greenyellow;
 }
-.link-mail:hover{
+
+.link-mail:hover {
     text-decoration: none;
     color: rgb(108, 179, 0);
 }
 
-.pos{
+.pos {
     position: absolute;
     margin-top: 28px;
     margin-left: 12px;
     font-size: 18px;
 }
-.pos-1{
+
+.pos-1 {
     position: absolute;
     margin-top: 25px;
     margin-left: 12px;
     font-size: 18px;
 }
-.imagee{
+
+.imagee {
     width: 60%;
     margin-left: 20%;
 
 }
 
-.line{
+.line {
     margin-left: 30%;
     margin-right: 16%;
     margin-top: -1%;
 }
 
-.box3{
+.box3 {
     width: 70%;
     margin-left: 20%;
     margin-right: auto;
-    height: 100px;
+    height: fit-content;
     padding-left: 2%;
     padding-top: -10px;
     margin-top: -1%;
 }
 
-.box4{
+.box4 {
     padding-left: 58px;
     padding-top: 17px;
     padding-bottom: auto;
@@ -161,20 +170,19 @@ textarea:focus{
 
 }
 
-.pos-icon{
+.pos-icon {
     font-size: 25px;
-    padding: 2%;
+    margin-top: 7px;
     border-radius: 50%;
-    margin-top: 2%;
     width: 42px;
     height: 42px;
-    text-align: center;
-    padding-right: auto;
-    padding-left: auto;
-    
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+
 }
 
-#loc{
+/* #loc{
     font-size: 25px;
     padding: 10px;
     padding-right: auto;
@@ -185,11 +193,21 @@ textarea:focus{
     width: 42px;
     height: 42px;
     border-radius: 50%;
+} */
+
+#loc {
+    font-size: 25px;
+    margin-top: 7px;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
 }
 
 
-
-.link-color{
+.link-color {
     text-decoration: none;
     color: black;
     margin-left: 2%;
@@ -197,22 +215,65 @@ textarea:focus{
     font-size: 15px;
 }
 
-.link-color:hover{
+.link-color:hover {
     text-decoration: none;
     color: black;
     margin-left: 5%;
-   
+
 }
 
-.title{
+.title {
     margin-left: 13%;
 }
 
 
 
-.logo{
+.logo {
     position: absolute;
     margin-top: -250px;
     width: 25%;
     /* height: 200px; */
+}
+
+.touch {
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .bg-img {
+        height: 720px;
+        background-position: -185px 0px;
+        background-size: cover;
+        /* will-change: auto; */
+        width: 100%;
+    }
+
+    .touch ,.touch a{
+       color: #f2f2f2;
+        /* position: absolute;
+        top: 52%;
+        left: -3%;
+        width: -webkit-fill-available; */
+    }
+
+    .box{
+
+    }
+
+ 
+
+}
+
+@media (min-width: 1000px) {
+    .bg-img{
+        background-size: cover;
+    height: 75%;
+    width: 100%;
+    background-position: center;
+    }
+
+    .touch {
+        position: initial;
+        
+    }
 }
