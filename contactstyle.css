@@ -324,6 +324,15 @@ textarea:focus {
     .box-1{
         margin-bottom: 5%;
     }    
+
+    .h-p{
+        font-size:21px;
+    }
+    
+    #head{
+        font-size: 50px;
+    }  
+
 }
 
 @media (min-width: 1000px) {
@@ -346,11 +355,5 @@ textarea:focus {
 }
 
 @media (max-width: 500px) {
-    .h-p{
-        font-size:50px;
-    }
-    
-    #head{
-        font-size: 21px;
-    }  
+
 }
